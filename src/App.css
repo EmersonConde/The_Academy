@@ -1,0 +1,53 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+body {
+  margin: 0px;
+}
+
+header {
+  width: 100vw;
+  max-height: 85px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #392E3F;
+  border-bottom: 5px solid rgb(104, 182, 220);
+}
+
+header img {
+  width: 100px;
+}
+
+header h1 {
+  color: rgb(104, 182, 220);
+  font-size: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#logo {
+  display: flex;
+}
+
+header nav {
+  margin-right: 10%;
+}
+
+header button {
+  background-color: #392E3F;
+  border: #621414;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+}
+
+header button:hover {
+  background-color: #302736;
+  border-radius: 10px;
+}
+
+main {
+  min-height: 1000px;
+}
