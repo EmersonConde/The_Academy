@@ -60,3 +60,7 @@ main {
   margin: 90px auto;
   max-width: 100%;
 }
+
+@media (max-width: 800px) {
+  
+}

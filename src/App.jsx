@@ -1,9 +1,9 @@
-import { useState } from 'react'
-import academyLogo from '/academy-img.png'
+import { useState, createContext, useContext } from 'react'
 import './App.css'
-import SimpleSlider from './components.jsx'
+import SimpleSlider from './slider.jsx'
+import {Menu, MenuMobile} from './menu.jsx'
 
-let tela_principal;
+let tela_principal = createContext();
 
 function MainPrincipal() {
   return (
@@ -24,33 +24,15 @@ function MainPrincipal() {
   )
 }
 
-function Menu(){
-  return (
-    <>
-    <header>
-      <a onClick={tela_principal} href='#' id='logo'>
-        <img src={academyLogo} alt="Academy Logo" />
-        <h1>ACADEMY</h1>
-      </a>
-      <nav>
-        <button>Palatines</button>
-        <button>Maldições</button>
-        <button>Habilidades</button>
-        <button>Sistema</button>
-        </nav>
-    </header>
-    </>
-  )
-}
-
 function App() {
   let [main, setmain] = useState(<MainPrincipal />)
   tela_principal = () => {
     setmain(<MainPrincipal />)
   }
+  let pointbreak = window.innerWidth;
   return (
     <>
-      <Menu />
+      {pointbreak >= 768 ? <Menu /> : <MenuMobile />}
       {main}
     </>
   )
