@@ -32,7 +32,8 @@ function App() {
   let pointbreak = window.innerWidth;
   return (
     <>
-      {pointbreak >= 768 ? <Menu /> : <MenuMobile />}
+      <Menu />
+      <MenuMobile />
       {main}
     </>
   )

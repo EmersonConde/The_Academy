@@ -8,7 +8,7 @@ export function Menu(){
     return (
         <>
         <header>
-        <a onClick={tela_principal} href='#' id='logo'>
+        <a onClick={tela_principal} href='' id='logo'>
             <img src={academyLogo} alt="Academy Logo" />
             <h1>ACADEMY</h1>
         </a>
@@ -26,11 +26,9 @@ export function Menu(){
 export function MenuMobile(){
     return (
         <>
-        <header>
-        <a onClick={tela_principal} href='#' id='logo'>
+        <div id='mobile'>
             <img src={academyLogo} alt="Academy Logo" />
-        </a>
-        </header>
+        </div>
         </>
     )
 }
