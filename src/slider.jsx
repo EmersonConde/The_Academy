@@ -4,7 +4,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './App.css'
 import youtubechamado from '/chamado-yout.svg'
-
+import youtchamadomob from '/chamado-yout-mobile.svg'
+import instagramchamado from '/chamado-inst.svg'
+import instchamadomob from '/chamado-inst-mobile.svg'
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -43,6 +45,7 @@ export default function SimpleSlider() {
     slidesToShow: 1,
     slidesToScroll: 1,
     adaptiveHeight: true,
+    speed: 500,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />
   };
@@ -54,13 +57,20 @@ export default function SimpleSlider() {
       }}
        {...settings}>
         <div key={1}>
-          <a target="_blank" href="https://www.youtube.com/@Crazygamer-sp7wg"><img class="bannerimage" src={youtubechamado} alt="Call for Youtube" /></a>
+          <a target="_blank" href="https://www.youtube.com/@Crazygamer-sp7wg">
+            <picture>
+              <source media="(max-width: 800px)" srcset={youtchamadomob} />
+              <img class="bannerimage" src={youtubechamado} alt="Call for Youtube" />
+            </picture>
+          </a>
         </div>
         <div key={2}>
-          <a target="_blank" href="https://docs.google.com/document/d/1FUJEYz4A2t2Dhm6NErIoaQtFDuzMhdo7Uf3SWjt1Cwc/edit?tab=t.6gztgvoqry37"><img class="bannerimage" src="https://i.pinimg.com/736x/c4/9b/ec/c49becb192046721372614da8d01bb59.jpg" alt="" /></a>
-        </div>
-        <div key={3}>
-          <a target="_blank" href="https://docs.google.com/document/d/1FUJEYz4A2t2Dhm6NErIoaQtFDuzMhdo7Uf3SWjt1Cwc/edit?tab=t.6gztgvoqry37"><img class="bannerimage" src="https://i.pinimg.com/736x/cf/f7/6d/cff76d14949b372fb9221c6001193142.jpg" alt="" /></a>
+          <a target="_blank" href="https://www.instagram.com/bladesandmagicrpg/">
+          <picture>
+            <source media="(max-width: 800px)" srcset={instchamadomob} />
+            <img class="bannerimage" src={instagramchamado} alt="Call for Instagram" />
+          </picture>
+          </a>
         </div>
       </Slider>
       <div style={{ textAlign: "center" }}>

@@ -1,9 +1,9 @@
-import { useState, createContext, useContext } from 'react'
+import { useState } from 'react'
 import './App.css'
 import SimpleSlider from './slider.jsx'
-import {Menu, MenuMobile} from './menu.jsx'
+import {Menu, FloatingMenu, MobileMenu} from './menu.jsx'
 
-let tela_principal = createContext();
+let tela_principal;
 
 function MainPrincipal() {
   return (
@@ -29,11 +29,11 @@ function App() {
   tela_principal = () => {
     setmain(<MainPrincipal />)
   }
-  let pointbreak = window.innerWidth;
   return (
     <>
       <Menu />
-      <MenuMobile />
+      <FloatingMenu />
+      <MobileMenu />
       {main}
     </>
   )

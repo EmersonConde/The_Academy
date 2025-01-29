@@ -1,17 +1,14 @@
-#root {
-  margin: 0 auto;
-  text-align: center;
-}
-
-body {
-  margin: 0px;
-}
-
-.meu-slid .slick-dots {
-  position: absolute;
-  bottom: 50px;
-  scale: 200%;
-}
+#root {margin: 0 auto; text-align: center;}
+body {margin: 0px;}
+main {text-align: justify; z-index: 0;}
+.meu-slid .slick-dots {position: absolute; bottom: 50px;}
+header img {width: 100px;}
+#logo {display: flex; text-decoration: none;}
+header nav {margin-right: 10%;}
+header button:hover {background-color: #302736; border-radius: 10px;}
+.mobile{display: none;}
+#openned .mobile2 {background-color: #00000000; border: none; display: flex; max-width: 100px;}
+#openned .mobile2 img, .mobile img {max-width: 85px; position: fixed; top: 10px; left: 10px;}
 
 header {
   width: 100vw;
@@ -25,23 +22,29 @@ header {
   border-bottom: 5px solid rgb(104, 182, 220);
 }
 
-header img {
-  width: 100px;
+#openned {
+  display: none;
+  background-color: rgb(50, 50, 50);
+  position: fixed;
+  z-index: 1;
+  width: 85vw;
+  height: 100vw;
+
+}
+
+#openned button {
+  background-color: #302736;
+  color: aliceblue;
+  width: 90%;
+  font-size: 20px;
+  margin: 10px auto;
+  padding: 10px;
 }
 
 header h1 {
   color: #68b6dc;
   font-size: 40px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-#logo {
-  display: flex;
-  text-decoration: none;
-}
-
-header nav {
-  margin-right: 10%;
 }
 
 header button {
@@ -51,23 +54,10 @@ header button {
   font-size: 20px;
 }
 
-header button:hover {
-  background-color: #302736;
-  border-radius: 10px;
-}
-
-#mobile {
-  display: none;
-}
-
-main {
-  margin: auto;
-  text-align: justify;
-}
-
 .bannerimage {
   margin: 90px auto;
   max-width: 100%;
+  border-bottom: 5px solid rgb(104, 182, 220);
 }
 
 .button {
@@ -78,25 +68,15 @@ main {
 }
 
 @media (max-width: 800px) {
-  header {
-    display: none;
-  }
+  header {display: none;}
+  .bannerimage {margin: auto;}
 
-  #mobile {
-    width: 100px;
-    max-height: 85px;
+  .mobile, .mobile2 {
+    background-color: #00000000;
+    border: #00000000;
     position: fixed;
     z-index: 1;
     display: flex;
     align-items: center;
-  }
-
-  #mobile img {
-    width: 100px;
-    opacity: 0.4;
-  }
-
-  .bannerimage {
-    margin: auto;
   }
 }
