@@ -10,7 +10,7 @@ import tela_sistema from './App.jsx'
 
 let open_menu;
 
-export function Menu(){
+export function Menu({tela_palatines, tela_maldições, tela_habilidades, tela_sistema}){
     return (
         <>
         <header>
@@ -19,10 +19,10 @@ export function Menu(){
             <h1>ACADEMY</h1>
         </a>
         <nav>
-            <button>Palatines</button>
-            <button>Maldições</button>
-            <button>Habilidades</button>
-            <button>Sistema</button>
+            <button onClick={tela_palatines}>Palatines</button>
+            <button onClick={tela_maldições}>Maldições</button>
+            <button onClick={tela_habilidades}>Habilidades</button>
+            <button onClick={tela_sistema}>Sistema</button>
             </nav>
         </header>
         </>
@@ -45,7 +45,7 @@ export function FloatingMenu(){
         </>
     )
 }
-export function MobileMenu() {
+export function MobileMenu({tela_palatines, tela_maldições, tela_habilidades, tela_sistema}) {
     return (
         <nav id='openned'>
             <button onClick={open_menu} class='mobile2'>
@@ -53,10 +53,11 @@ export function MobileMenu() {
             </button>
             <h1>Blades and Magic</h1>
             <h2>The Academy Menu</h2>
-            <button>Palatines</button>
-            <button>Maldições</button>
-            <button>Habilidades</button>
-            <button>Sistema</button>
+            <button onClick={tela_palatines}>Palatines</button>
+            <button onClick={tela_maldições}>Maldições</button>
+            <button onClick={tela_habilidades}>Habilidades</button>
+            <button onClick={tela_sistema}>Sistema</button>
+            <h3 class="mt-100 mb-5">v0.1.1 - By Émerson Conde</h3>
         </nav>
     )
 }

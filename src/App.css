@@ -1,20 +1,21 @@
-#root {margin: 0 auto; text-align: center;}
+@import "tailwindcss";
+
+#root {margin: 0 0; text-align: center;}
 body {margin: 0px;}
 main {text-align: justify; z-index: 0;}
 .meu-slid .slick-dots {position: absolute; bottom: 50px;}
 header img {width: 100px;}
-#logo {display: flex; text-decoration: none;}
+#logo {display: flex; text-decoration: none; align-items: center;}
 header nav {margin-right: 10%;}
 header button:hover {background-color: #302736; border-radius: 10px;}
 .mobile{display: none;}
 #openned .mobile2 {background-color: #00000000; border: none; display: flex; max-width: 100px;}
-#openned .mobile2 img, .mobile img {max-width: 85px; position: fixed; top: 10px; left: 10px;}
+#openned .mobile2 img, .mobile img {max-width: 85px; position: absolute; top: 10px; left: 10px;}
+.textmain {margin: 20px 40px;}
 
 header {
   width: 100vw;
   max-height: 85px;
-  position: fixed;
-  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -25,20 +26,24 @@ header {
 #openned {
   display: none;
   background-color: rgb(50, 50, 50);
-  position: fixed;
+  position: absolute;
   z-index: 1;
   width: 85vw;
-  height: 100vw;
 
 }
 
 #openned button {
   background-color: #302736;
+  border-radius: 100px;
   color: aliceblue;
   width: 90%;
   font-size: 20px;
   margin: 10px auto;
   padding: 10px;
+}
+
+#openned button:hover {
+  background-color: #27202c;
 }
 
 header h1 {
@@ -55,16 +60,24 @@ header button {
 }
 
 .bannerimage {
-  margin: 90px auto;
-  max-width: 100%;
   border-bottom: 5px solid rgb(104, 182, 220);
+}
+
+header button {
+  margin: 0px 5px;
+  padding: 5px;
 }
 
 .button {
   color:  #68b6dc;
-  background-color: #ffffff00;
+  background-color: #ffffff15;
+  border-radius: 100px;
   min-width: 100px;
-  margin: 0px 10px;
+  margin: 5px 10px;
+}
+
+.button:hover {
+  background-color: #ffffff30;
 }
 
 @media (max-width: 800px) {
@@ -74,9 +87,17 @@ header button {
   .mobile, .mobile2 {
     background-color: #00000000;
     border: #00000000;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     display: flex;
     align-items: center;
+  }
+  #openned .mobile2 img {
+    top: 0px;
+    left: 0px;
+    width: 70px;
+  }
+  #openned h1 {
+    margin: 20px 0px;
   }
 }
