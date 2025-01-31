@@ -10,7 +10,7 @@ import tela_sistema from './App.jsx'
 
 let open_menu;
 
-export function Menu({tela_palatines, tela_maldições, tela_habilidades, tela_sistema}){
+export function Menu({tela_principal, tela_palatines, tela_maldições, tela_habilidades, tela_sistema}){
     return (
         <>
         <header>
@@ -45,7 +45,7 @@ export function FloatingMenu(){
         </>
     )
 }
-export function MobileMenu({tela_palatines, tela_maldições, tela_habilidades, tela_sistema}) {
+export function MobileMenu({tela_principal, tela_palatines, tela_maldições, tela_habilidades, tela_sistema}) {
     return (
         <nav id='openned'>
             <button onClick={open_menu} class='mobile2'>
@@ -53,6 +53,7 @@ export function MobileMenu({tela_palatines, tela_maldições, tela_habilidades, 
             </button>
             <h1>Blades and Magic</h1>
             <h2>The Academy Menu</h2>
+            <button onClick={tela_principal}>Principal</button>
             <button onClick={tela_palatines}>Palatines</button>
             <button onClick={tela_maldições}>Maldições</button>
             <button onClick={tela_habilidades}>Habilidades</button>

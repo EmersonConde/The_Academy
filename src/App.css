@@ -1,7 +1,11 @@
 @import "tailwindcss";
 
-#root {margin: 0 0; text-align: center;}
-body {margin: 0px;}
+#root {margin: 0px; text-align: center;}
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
 main {text-align: justify; z-index: 0;}
 .meu-slid .slick-dots {position: absolute; bottom: 50px;}
 header img {width: 100px;}
@@ -80,7 +84,7 @@ header button {
   background-color: #ffffff30;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1079px) {
   header {display: none;}
   .bannerimage {margin: auto;}
 
