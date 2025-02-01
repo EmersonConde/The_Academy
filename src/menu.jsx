@@ -48,16 +48,16 @@ export function FloatingMenu(){
 export function MobileMenu({tela_principal, tela_palatines, tela_maldições, tela_habilidades, tela_sistema}) {
     return (
         <nav id='openned'>
-            <button onClick={open_menu} class='mobile2'>
+            <button  onClick={open_menu} class='mobile2'>
                 <img src={academyLogo} alt="Academy Logo" />
             </button>
             <h1>Blades and Magic</h1>
             <h2>The Academy Menu</h2>
-            <button onClick={tela_principal}>Principal</button>
-            <button onClick={tela_palatines}>Palatines</button>
-            <button onClick={tela_maldições}>Maldições</button>
-            <button onClick={tela_habilidades}>Habilidades</button>
-            <button onClick={tela_sistema}>Sistema</button>
+            <button class="buttoni" onClick={tela_principal}>Principal</button>
+            <button class="buttoni" onClick={tela_palatines}>Palatines</button>
+            <button class="buttoni" onClick={tela_maldições}>Maldições</button>
+            <button class="buttoni" onClick={tela_habilidades}>Habilidades</button>
+            <button class="buttoni" onClick={tela_sistema}>Sistema</button>
             <h3 class="mt-100 mb-5">v0.1.1 - By Émerson Conde</h3>
         </nav>
     )

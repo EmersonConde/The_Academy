@@ -6,6 +6,15 @@ body {
   margin: 0;
   padding: 0;
 }
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 25px;
+}
+h3 {
+  font-size: 20px;
+}
 main {text-align: justify; z-index: 0;}
 .meu-slid .slick-dots {position: absolute; bottom: 50px;}
 header img {width: 100px;}
@@ -44,9 +53,10 @@ header {
   font-size: 20px;
   margin: 10px auto;
   padding: 10px;
+  cursor: pointer;
 }
 
-#openned button:hover {
+#openned .buttoni:hover {
   background-color: #27202c;
 }
 
@@ -57,19 +67,17 @@ header h1 {
 }
 
 header button {
+  cursor: pointer;
   background-color: #392E3F;
   border: #621414;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 20px;
+  margin: 0px 5px;
+  padding: 5px;
 }
 
 .bannerimage {
   border-bottom: 5px solid rgb(104, 182, 220);
-}
-
-header button {
-  margin: 0px 5px;
-  padding: 5px;
 }
 
 .button {
@@ -78,10 +86,7 @@ header button {
   border-radius: 100px;
   min-width: 100px;
   margin: 5px 10px;
-}
-
-.button:hover {
-  background-color: #ffffff30;
+  cursor: pointer;
 }
 
 @media (max-width: 1079px) {
@@ -89,6 +94,7 @@ header button {
   .bannerimage {margin: auto;}
 
   .mobile, .mobile2 {
+    cursor: pointer;
     background-color: #00000000;
     border: #00000000;
     position: absolute;
