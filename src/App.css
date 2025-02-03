@@ -102,12 +102,18 @@ header button {
     display: flex;
     align-items: center;
   }
-  #openned .mobile2 img {
-    top: 0px;
-    left: 0px;
-    width: 70px;
-  }
   #openned h1 {
     margin: 20px 0px;
+  }
+}
+@media (max-width: 500px) {
+  #openned .mobile2 img{
+    max-width: 100px;
+  }
+  #openned .mobile2{
+    max-width: 100px;
+    height: 100px;
+    position: relative;
+    margin: auto;
   }
 }

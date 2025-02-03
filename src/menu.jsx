@@ -58,7 +58,7 @@ export function MobileMenu({tela_principal, tela_palatines, tela_maldições, te
             <button class="buttoni" onClick={tela_maldições}>Maldições</button>
             <button class="buttoni" onClick={tela_habilidades}>Habilidades</button>
             <button class="buttoni" onClick={tela_sistema}>Sistema</button>
-            <h3 class="mt-100 mb-5">v0.1.1 - By Émerson Conde</h3>
+            <h3 class="mt-100 mb-5">v0.1.2 - By Émerson Conde</h3>
         </nav>
     )
 }
