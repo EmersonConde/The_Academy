@@ -1,29 +1,16 @@
 import react from 'react';
 import SimpleSlider from './slider.jsx'
 import './App.css'
+import content from "./content.json"
 
 export function MainPalatine(){
     return (
       <main>
-        <div class="textmain">
-          <h1>Criação de Personagem</h1>
-          <p>Cada mago dentro do mundo de blades & magic é único, portanto antes de começar a criar seu personagem é necessário ter em mente que seu mago deve ser único, deve possuir uma forte vontade e personalidade, podendo assim manifestar sua vontade no mundo real a partir da energia mantra.</p>
-          <h2>Informações Básicas</h2>
-          <p>Inicialmente é necessário criar seu personagem como um humano normal, ter uma noção do que ele era antes de entrar na academia e os motivos que o levaram a se juntar a ela. Defina, nome, idade, altura, aparência, história e caráter da vontade.</p>
-          <h2>Caráter da Vontade</h2>
-          <p>Magos extraem força de suas vontades positivas, que canalizam através da mantra para criar grimórios e habilidades. As principais vontades positivas são:</p>
-          <h3>Vontade de Proteção</h3>
-          <ul>
-              <li>Descrição: Desejo de proteger alguém ou algo amado.</li>
-              <li>Influência: Magos com essa vontade tendem a desenvolver habilidades defensivas e suporte.</li>
-              <li>Exemplo: Um escudo mágico criado para proteger aliados.</li>
-          </ul>
-          <h3>Vontade de Superação</h3>
-          <ul>
-              <li>Descrição: Motivação para vencer desafios ou superar limitações pessoais.</li>
-              <li>Influência: Gera magos resilientes, com habilidades de regeneração ou resistência.</li>
-              <li>Exemplo: Um mago que pode continuar lutando mesmo quando gravemente ferido.</li>
-          </ul>
+          <h1>Criação de Personagem</h1><p>{content.criacao_personagem_p1}</p>
+          <h2>Informações Básicas</h2><p>{content.criacao_personagem_p2}</p>
+          <h2>Caráter da Vontade</h2><p>{content.criacao_personagem_p3}</p>
+          <h3>Vontade de Proteção</h3><ul dangerouslySetInnerHTML={{ __html: content.vontade_1 }}></ul>
+          <h3>Vontade de Superação</h3><ul dangerouslySetInnerHTML={{ __html: content.vontade_2 }}></ul>
           <h3>Vontade de Justiça</h3>
           <ul>
               <li>Descrição: Desejo de corrigir erros ou punir os que causam sofrimento.</li>
@@ -88,7 +75,6 @@ export function MainPalatine(){
           <p>Inteligência: Relacionada à capacidade cognitiva, resolução de problemas e aprendizado de magias. Magos com alta inteligência têm um melhor controle sobre suas habilidades mágicas, além de uma maior eficiência ao aprender novas magias.</p>
           <p>Sabedoria: Reflete a percepção, intuição e entendimento profundo sobre o mundo ao redor. Afeta a capacidade de tomar decisões sensatas e usar estratégias eficazes. Magos sábios possuem maior conexão com o maná e podem manipular magia com mais controle e precisão.</p>
           <p>Vontade: A força interna e determinação do personagem, essencial para o uso da magia (mantra). Vontade alta aumenta a capacidade do mago de canalizar sua energia interna para realizar feitos mágicos poderosos, resistir a efeitos mentais ou controlar o próprio destino em momentos críticos.</p>
-        </div>
       </main>
     )
   }
