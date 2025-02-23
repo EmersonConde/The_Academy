@@ -2,82 +2,58 @@ import react from 'react';
 import SimpleSlider from './slider.jsx'
 import './App.css'
 import content from "./content.json"
+import img_vont from '/will_image.jpeg'
+import bad_vont from "/bad_vont.jpeg"
+import atri_img from "/hex-attributes.png"
+import criacao from '/criacao.jpeg'
+
+const cp = content.criacao_personagem;
+const vont = content.vontade; 
+const atri = content.Atributos;
+const cruel_vonts = [
+  Object.values(vont.ex6).join(""),
+  Object.values(vont.ex7).join(""),
+  Object.values(vont.ex8).join(""),
+  Object.values(vont.ex9).join(""),
+  Object.values(vont.ex10).join("")
+]
+const good_vonts = [
+  Object.values(vont.ex1).join(""), 
+  Object.values(vont.ex2).join(""), 
+  Object.values(vont.ex3).join(""), 
+  Object.values(vont.ex4).join(""), 
+  Object.values(vont.ex5).join(""),
+]
+
 
 export function MainPalatine(){
-    return (
-      <main>
-          <h1>Criação de Personagem</h1><p>{content.criacao_personagem_p1}</p>
-          <h2>Informações Básicas</h2><p>{content.criacao_personagem_p2}</p>
-          <h2>Caráter da Vontade</h2><p>{content.criacao_personagem_p3}</p>
-          <h3>Vontade de Proteção</h3><ul dangerouslySetInnerHTML={{ __html: content.vontade_1 }}></ul>
-          <h3>Vontade de Superação</h3><ul dangerouslySetInnerHTML={{ __html: content.vontade_2 }}></ul>
-          <h3>Vontade de Justiça</h3>
-          <ul>
-              <li>Descrição: Desejo de corrigir erros ou punir os que causam sofrimento.</li>
-              <li>Influência: Estilos de combate direto e punitivo, com foco em desarmar ou subjugar o inimigo.</li>
-              <li>Exemplo: Golpes mágicos que enfraquecem os adversários ao revelar suas fraquezas.</li>
-          </ul>
-          <h3>Vontade de Conhecimento</h3>
-          <ul>
-              <li>Descrição: Fome insaciável por aprender e entender o mundo.</li>
-              <li>Influência: Estilos técnicos e inteligentes, com habilidades de análise e manipulação do ambiente.</li>
-              <li>Exemplo: Feitiços que leem ou copiam habilidades inimigas.</li>
-          </ul>
-          <h3>Vontade de Criação</h3>
-          <ul>
-              <li>Descrição: Desejo de construir algo duradouro ou belo.</li>
-              <li>Influência: Magos com habilidades de invocação, construção de barreiras ou objetos mágicos.</li>
-              <li>Exemplo: Um mago que cria artefatos temporários para atacar ou defender.</li>
-          </ul>
-          <p>As maldições nascem de emoções negativas e desejos destrutivos, frequentemente associados à dor e ao sofrimento. As principais vontades negativas são:</p>
-          <h3>Vontade de Vingança</h3>
-          <ul>
-              <li>Descrição: Desejo de punir quem causou sofrimento.</li>
-              <li>Influência: Maldições vingativas com poderes focados em dano contínuo e perseguição implacável.</li>
-              <li>Exemplo: Uma maldição que drena vitalidade enquanto persegue seu alvo incansavelmente.</li>
-          </ul>
-          <h3>Vontade de Ódio</h3>
-          <ul>
-              <li>Descrição: Fúria irracional e destrutiva.</li>
-              <li>Influência: Maldições poderosas, mas descontroladas, com explosões de energia destrutiva.</li>
-              <li>Exemplo: Golpes explosivos que causam dano indiscriminado.</li>
-          </ul>
-          <h3>Vontade de Desespero</h3>
-          <ul>
-              <li>Descrição: Angústia profunda que corrompe o espírito.</li>
-              <li>Influência: Maldições com poderes que enfraquecem ou paralisam adversários emocionalmente.</li>
-              <li>Exemplo: Uma aura que espalha medo e apatia ao redor.</li>
-          </ul>
-          <h3>Vontade de Ganância</h3>
-          <ul>
-              <li>Descrição: Desejo insaciável de obter mais, seja poder, riqueza ou status.</li>
-              <li>Influência: Maldições que roubam força ou recursos dos adversários.</li>
-              <li>Exemplo: Sugadores de energia que enfraquecem inimigos enquanto se fortalecem.</li>
-          </ul>
-          <h3>Vontade de Controle</h3>
-          <ul>
-              <li>Descrição: Desejo de dominar tudo ao redor.</li>
-              <li>Influência: Maldições com habilidades de manipulação e controle mental.</li>
-              <li>Exemplo: Um feitiço que transforma aliados em servos temporários.</li>
-          </ul>
-          <h2>Interação entre Vontades</h2>
-          <ul>
-              <li>Magos: Os Magos podem desenvolver suas habilidades ao focar em suas vontades positivas, criando estratégias únicas.</li>
-              <li>Maldições: Maldições nascem das vontades negativas e se tornam mais perigosas quanto maior for o foco nessa negatividade.</li>
-              <li>Conflito: Magos enfrentam maldições que exploram suas fraquezas emocionais, enquanto maldições lutam para destruir a resiliência dos magos.</li>
-              <li>Magos Malignos: Normalmente magos que possuem vontades negativas se tornam manipuladores de maldições que buscam trazer o caos, movidos a partir de desejos profanos.</li>
-          </ul>
-          <h2>Atributos Básicos</h2>
-          <p>Na criação do personagem devem ser rolados 1d4 individualmente para cada atributo, sem a opção de alterar a posição após a rolagem.</p>
-          <p>Força: Representa a potência física do personagem, influenciando sua capacidade de causar dano físico, carregar objetos pesados e resistir a ataques baseados em força bruta. Magos com alta força são mais eficazes em combate corpo a corpo.</p>
-          <p>Agilidade: Reflete a velocidade e destreza do personagem, afetando sua capacidade de se mover rapidamente, esquivar de ataques e realizar acrobacias. Agilidade alta é crucial para magos que dependem de ataques rápidos ou evasão.</p>
-          <p>Resistência: Mede a capacidade do personagem de suportar danos físicos e o desgaste físico, incluindo a resistência a venenos, doenças e fadiga. A resistência é vital para resistir a ataques poderosos e prolongar a eficácia durante longas batalhas.</p>
-          <p>Inteligência: Relacionada à capacidade cognitiva, resolução de problemas e aprendizado de magias. Magos com alta inteligência têm um melhor controle sobre suas habilidades mágicas, além de uma maior eficiência ao aprender novas magias.</p>
-          <p>Sabedoria: Reflete a percepção, intuição e entendimento profundo sobre o mundo ao redor. Afeta a capacidade de tomar decisões sensatas e usar estratégias eficazes. Magos sábios possuem maior conexão com o maná e podem manipular magia com mais controle e precisão.</p>
-          <p>Vontade: A força interna e determinação do personagem, essencial para o uso da magia (mantra). Vontade alta aumenta a capacidade do mago de canalizar sua energia interna para realizar feitos mágicos poderosos, resistir a efeitos mentais ou controlar o próprio destino em momentos críticos.</p>
-      </main>
-    )
-  }
+  return (
+    <main class="mx-10">
+      <img src={criacao} class="max-h-100 mx-auto opacity-50" alt="Criação de Personagem" />
+      <div id='criacao' class="mt-0 mx-auto mb-10" dangerouslySetInnerHTML={{__html: [cp.t1, cp.p1, cp.p2].join("")}} />
+      <section class="flex flex-wrap items-center">
+        <div class='vontade' dangerouslySetInnerHTML={{__html: [vont.t1, vont.p1, good_vonts.join("")].join("")}} />
+        <img class="max-h-100 my-5 mx-auto opacity-50" src={img_vont} alt="Will Image" />
+        <div class='vontade' dangerouslySetInnerHTML={{__html: [vont.p2, cruel_vonts.join(""), vont.interacao].join("")}} />
+        <img class="max-h-100 my-5 mx-auto opacity-50" src={bad_vont} alt="Bad Will" />
+      </section>
+      <section id='atributo' class="flex flex-wrap items-center">
+        <img id='atri1' class="max-h-100 my-5 mx-auto opacity-50" src={atri_img} alt="" />
+        <div class="max-w-[500px] ml-auto">
+          <h2 class="mt-10">{atri.tittle}</h2>
+          <p>{atri.p1}</p>
+          <h3>{atri.forca.name}</h3><p>{atri.forca.descrip}</p>
+          <h3>{atri.agil.name}</h3><p>{atri.agil.descrip}</p>
+          <h3>{atri.resi.name}</h3><p>{atri.resi.descrip}</p>
+          <h3>{atri.inte.name}</h3><p>{atri.inte.descrip}</p>
+          <h3>{atri.sabe.name}</h3><p>{atri.sabe.descrip}</p>
+          <h3>{atri.vont.name}</h3><p>{atri.vont.descrip}</p>
+        </div>
+        <img id='atri2' class="hidden max-h-100 my-5 mx-auto opacity-50" src={atri_img} alt="" />
+      </section>
+    </main>
+  )
+}
 export function MainMaldições(){
     return (
       <main>

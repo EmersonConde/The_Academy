@@ -1,9 +1,91 @@
 {
-    "criacao_personagem_p1": "Cada mago dentro do mundo de blades & magic é único, portanto antes de começar a criar seu personagem é necessário ter em mente que seu mago deve ser único, deve possuir uma forte vontade e personalidade, podendo assim manifestar sua vontade no mundo real a partir da energia mantra.",
-    "criacao_personagem_p2": "Inicialmente é necessário criar seu personagem como um humano normal, ter uma noção do que ele era antes de entrar na academia e os motivos que o levaram a se juntar a ela. Defina, nome, idade, altura, aparência, história e caráter da vontade.",
-    "criacao_personagem_p3": "Magos extraem força de suas vontades positivas, que canalizam através da mantra para criar grimórios e habilidades. As principais vontades positivas são:",
-    "criacao_personagem_p4": "",
-    "criacao_personagem_p5": "",
-    "vontade_1": "<li>Descrição: Desejo de proteger alguém ou algo amado.</li><li>Influência: Magos com essa vontade tendem a desenvolver habilidades defensivas e suporte.</li><li>Exemplo: Um escudo mágico criado para proteger aliados.</li>",
-    "vontade_2": "<li>Descrição: Motivação para vencer desafios ou superar limitações pessoais.</li><li>Influência: Gera magos resilientes, com habilidades de regeneração ou resistência.</li><li>Exemplo: Um mago que pode continuar lutando mesmo quando gravemente ferido.</li>"
+    "criacao_personagem": {
+        "t1": "<h1> Criação de Personagem</h1>",
+        "p1": " <p class='my-5'>Cada mago dentro do mundo de blades & magic é único, portanto antes de começar a criar seu personagem é necessário ter em mente que seu mago deve ser único, deve possuir uma forte vontade e personalidade, podendo assim manifestar sua vontade no mundo real a partir da energia mantra.</p>",
+        "p2": " <p class='my-5'>Inicialmente é necessário criar seu personagem como um humano normal, ter uma noção do que ele era antes de entrar na academia e os motivos que o levaram a se juntar a ela. Defina, nome, idade, altura, aparência, história e caráter da vontade.</p>"
+    },
+    
+    "vontade": {
+        "t1": "<h2>Caráter da Vontade</h2>",
+        "p1": "<p class='my-5'>Magos extraem força de suas vontades positivas, que canalizam através da mantra para criar grimórios e habilidades. As principais vontades positivas são:</p>",
+        "p2": "<p class='my-5'>As maldições nascem de emoções negativas e desejos destrutivos, frequentemente associados à dor e ao sofrimento. As principais vontades negativas são:</p>",
+        "ex1": {
+            "tittle": "<h3>Proteção</h3>",
+            "descrip": "<p>Descrição: Desejo de proteger alguém ou algo amado. Magos com essa vontade tendem a desenvolver habilidades defensivas e suporte. Gera magos resilientes, com habilidades de regeneração ou resistência.</p>",
+            "exemp": "<small>Ex: Um escudo mágico criado para proteger aliados.</small>"
+        },
+        "ex2": {
+            "tittle": "<h3>Superação</h3>",
+            "descrip": "<p>Descrição: Motivação para vencer desafios ou superar limitações pessoais. </p>",
+            "exemp": "<small>Ex: Um mago que pode continuar lutando mesmo quando gravemente ferido.</small>"
+        },
+        "ex3": {
+            "tittle": "<h3>Justiça</h3>",
+            "descrip": "<p>Descrição: Desejo de corrigir erros ou punir os que causam sofrimento. Estilos de combate direto e punitivo, com foco em desarmar ou subjugar o inimigo.</p>",
+            "exemp": "<small>Ex: Golpes mágicos que enfraquecem os adversários ao revelar suas fraquezas.</small>"
+        },
+        "ex4": {
+            "tittle": "<h3>Conhecimento</h3>",
+            "descrip": "<p>Descrição: Fome insaciável por aprender e entender o mundo. Estilos técnicos e inteligentes, com habilidades de análise e manipulação do ambiente.</p>",
+            "exemp": "<small>Ex: Feitiços que leem ou copiam habilidades inimigas.</small>"
+        },
+        "ex5": {
+            "tittle": "<h3>Criação</h3>",
+            "descrip": "<p>Descrição: Desejo de construir algo duradouro ou belo. Magos com habilidades de invocação, construção de barreiras ou objetos mágicos.</p>",
+            "exemp": "<small>Ex: Um mago que cria artefatos temporários para atacar ou defender.</small>"
+        },
+        "ex6": {
+            "tittle": "<h3>Vingança</h3>",
+            "descrip": "<p>Descrição: Desejo de punir quem causou sofrimento. Maldições vingativas com poderes focados em dano contínuo e perseguição implacável.</p>",
+            "exemp": "<small>Uma maldição que drena vitalidade enquanto persegue seu alvo incansavelmente.</small>"
+        },
+        "ex7": {
+            "tittle": "<h3>Ódio</h3>",
+            "descrip": "<p>Descrição: Fúria irracional e destrutiva. Maldições poderosas, mas descontroladas, com explosões de energia destrutiva.</p>",
+            "exemp": "<small>Ex: Golpes explosivos que causam dano indiscriminado.</small>"
+        },
+        "ex8": {
+            "tittle": "<h3>Desespero</h3>",
+            "descrip": "<p>Descrição: Angústia profunda que corrompe o espírito. Maldições com poderes que enfraquecem ou paralisam adversários emocionalmente.</p>",
+            "exemp": "<small></small>"
+        },
+        "ex9": {
+            "tittle": "<h3>Ganância</h3>",
+            "descrip": "<p>Descrição: Desejo insaciável de obter mais, seja poder, riqueza ou status. Maldições que roubam força ou recursos dos adversários.</p>",
+            "exemp": "<small>Ex: Sugadores de energia que enfraquecem inimigos enquanto se fortalecem.</small>"
+        },
+        "ex10": {
+            "tittle": "<h3>Controle</h3>",
+            "descrip": "<p>Descrição: Desejo de dominar tudo ao redor. Maldições com habilidades de manipulação e controle mental.</p>",
+            "exemp": "<small>Ex: Um feitiço que transforma aliados em servos temporários.</small>"
+        }
+    },
+    "Atributos": {
+        "tittle": "Atributos Básicos",
+        "p1": "Na criação do personagem devem ser rolados 1d4 individualmente para cada atributo, sem a opção de alterar a posição após a rolagem.",
+        "forca": {
+            "name": "Força",
+            "descrip": "Representa a potência física do personagem, influenciando sua capacidade de causar dano físico, carregar objetos pesados e resistir a ataques baseados em força bruta. Magos com alta força são mais eficazes em combate corpo a corpo."
+        },
+        "agil": {
+            "name": "Agilidade",
+            "descrip": "Reflete a velocidade e destreza do personagem, afetando sua capacidade de se mover rapidamente, esquivar de ataques e realizar acrobacias. Agilidade alta é crucial para magos que dependem de ataques rápidos ou evasão."
+        },
+        "resi": {
+            "name": "Resistência",
+            "descrip": "Mede a capacidade do personagem de suportar danos físicos e o desgaste físico, incluindo a resistência a venenos, doenças e fadiga. A resistência é vital para resistir a ataques poderosos e prolongar a eficácia durante longas batalhas."
+        },
+        "inte": {
+                "name": "Inteligência",
+                "descrip": "Relacionada à capacidade cognitiva, resolução de problemas e aprendizado de magias. Magos com alta inteligência têm um melhor controle sobre suas habilidades mágicas, além de uma maior eficiência ao aprender novas magias."
+        },
+        "sabe": {
+                "name": "Sabedoria",
+                "descrip": "Reflete a percepção, intuição e entendimento profundo sobre o mundo ao redor. Afeta a capacidade de tomar decisões sensatas e usar estratégias eficazes. Magos sábios possuem maior conexão com o maná e podem manipular magia com mais controle e precisão."
+        },
+        "vont": {
+                "name": "Vontade",
+                "descrip": "A força interna e determinação do personagem, essencial para o uso da magia (mantra). Vontade alta aumenta a capacidade do mago de canalizar sua energia interna para realizar feitos mágicos poderosos, resistir a efeitos mentais ou controlar o próprio destino em momentos críticos."
+        }
+    }
 }

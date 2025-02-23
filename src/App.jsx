@@ -27,22 +27,23 @@ function App() {
   }
   return (
     <>
-      <Menu
-        tela_principal={tela_principal} 
-        tela_palatines={tela_palatines} 
-        tela_maldições={tela_maldições}
-        tela_habilidades={tela_habilidades}
-        tela_sistema={tela_sistema}
-      />
-      <FloatingMenu/>
-      <MobileMenu 
-        tela_principal={tela_principal} 
-        tela_palatines={tela_palatines} 
-        tela_maldições={tela_maldições}
-        tela_habilidades={tela_habilidades}
-        tela_sistema={tela_sistema}
-      />
-      {main}
+          <Menu
+            tela_principal={tela_principal} 
+            tela_palatines={tela_palatines} 
+            tela_maldições={tela_maldições}
+            tela_habilidades={tela_habilidades}
+            tela_sistema={tela_sistema}
+          />
+          <FloatingMenu/>
+          <MobileMenu 
+            tela_principal={tela_principal} 
+            tela_palatines={tela_palatines} 
+            tela_maldições={tela_maldições}
+            tela_habilidades={tela_habilidades}
+            tela_sistema={tela_sistema}
+          />
+          {main}
+          <footer></footer>
     </>
   )
 }
