@@ -47,7 +47,7 @@
         "ex8": {
             "tittle": "<h3>Desespero</h3>",
             "descrip": "<p>Descrição: Angústia profunda que corrompe o espírito. Maldições com poderes que enfraquecem ou paralisam adversários emocionalmente.</p>",
-            "exemp": "<small></small>"
+            "exemp": "<small>Ex: Uma aura que espalha medo e apatia ao redor.</small>"
         },
         "ex9": {
             "tittle": "<h3>Ganância</h3>",
@@ -61,31 +61,80 @@
         }
     },
     "Atributos": {
-        "tittle": "Atributos Básicos",
-        "p1": "Na criação do personagem devem ser rolados 1d4 individualmente para cada atributo, sem a opção de alterar a posição após a rolagem.",
+        "escala": "Escala de Periculosidade",
+        "p0": "Classificação criada pela academia que busca mensurar a força de cada mago, com o objetivo de alocar melhor seus talentos em missões e minimizar riscos. É composta por um componente numérico que varia de 1 a 5, sendo 5 um mago fraco, normalmente aprendiz, e 1 um mago de altíssimo nível, apto inclusive a alcançar o posto de guardião. Existe também a escala 6, reservada a não usuários de mantra ou a magos com força irrelevante, e a escala 0, reservada a aberrações que fogem de qualquer métrica da academia; poucos seres na história (entre magos ou maldições) receberam essa classificação.",
+        "test_scale": "Cada palatine tem o direto de a cada 6 meses ter um teste de escala, nesse teste serão analisados os feitos acadêmicos e em missões práticas. Subir de escala é algo muito desejado entre os palatines, pois assim é possível ganhar uma assistência maior, além de ser enviado para missões de maior valor. É importante destacar que a escala não é diretamente ligado aos anos acadêmicos, então é necessário passar pelos 5 anos da academia, mesmo evoluindo rápido de escala.",
+        "atbasico": "Atributos Básicos",
+        "p1": "Os atributos em Blades & Magic vão muito além da pura capacidade corporal e mental; eles são diretamente influenciados pela mantra ou pelos contratos que afetam o corpo. Como consequência, os atributos ultrapassam os limites humanos. Na criação do personagem, deve-se rolar 1d4 individualmente para cada atributo, sem a opção de alterar a posição após a rolagem. Em termos de comparação, um personagem que tenha pelo menos 1 em algum atributo ainda possui uma capacidade equivalente ao ápice da habilidade humana, desde que se desconsidere a experiência de cada indivíduo.",
         "forca": {
             "name": "Força",
-            "descrip": "Representa a potência física do personagem, influenciando sua capacidade de causar dano físico, carregar objetos pesados e resistir a ataques baseados em força bruta. Magos com alta força são mais eficazes em combate corpo a corpo."
+            "descrip": "Representa a potência física do personagem, influenciando sua capacidade de causar dano físico, carregar objetos pesados e resistir a ataques baseados em força bruta. Magos com alta força são mais eficazes em combate corpo a corpo. Um indivíduo com 1 de força pode carregar até 200 kg sem qualquer esforço, enquanto, com 4, pode carregar até 800 kg."
         },
         "agil": {
             "name": "Agilidade",
-            "descrip": "Reflete a velocidade e destreza do personagem, afetando sua capacidade de se mover rapidamente, esquivar de ataques e realizar acrobacias. Agilidade alta é crucial para magos que dependem de ataques rápidos ou evasão."
+            "descrip": "Reflete a velocidade e destreza do personagem, afetando sua capacidade de se mover rapidamente, esquivar de ataques e realizar acrobacias. Agilidade alta é crucial para magos que dependem de ataques rápidos ou evasão. Em comparação, 1 ponto equivale a 22,5 metros a cada 10 segundos, enquanto 4 pontos equivalem a 90 metros no mesmo intervalo."
         },
         "resi": {
             "name": "Resistência",
-            "descrip": "Mede a capacidade do personagem de suportar danos físicos e o desgaste físico, incluindo a resistência a venenos, doenças e fadiga. A resistência é vital para resistir a ataques poderosos e prolongar a eficácia durante longas batalhas."
+            "descrip": "Mede a capacidade do personagem de suportar danos físicos e o desgaste corporal, incluindo resistência a venenos, doenças e fadiga. A resistência é vital para suportar ataques poderosos e manter a eficácia durante longas batalhas. Enquanto 1 ponto de resistência permite suportar danos equivalentes à destruição de uma casa pequena, 4 pontos possibilitam resistir a danos superiores aos que destruiriam um grande arranha-céu."
         },
         "inte": {
-                "name": "Inteligência",
-                "descrip": "Relacionada à capacidade cognitiva, resolução de problemas e aprendizado de magias. Magos com alta inteligência têm um melhor controle sobre suas habilidades mágicas, além de uma maior eficiência ao aprender novas magias."
+            "name": "Inteligência",
+            "descrip": "Relaciona-se à capacidade cognitiva, à resolução de problemas e ao aprendizado de magias. Magos com alta inteligência têm um melhor controle sobre suas habilidades mágicas, além de maior eficiência ao aprender novas magias. Em comparação, 1 ponto equivale a um QI de 160, enquanto 4 equivale a 340 de QI."
         },
         "sabe": {
-                "name": "Sabedoria",
-                "descrip": "Reflete a percepção, intuição e entendimento profundo sobre o mundo ao redor. Afeta a capacidade de tomar decisões sensatas e usar estratégias eficazes. Magos sábios possuem maior conexão com o maná e podem manipular magia com mais controle e precisão."
+            "name": "Sabedoria",
+            "descrip": "Reflete a percepção, intuição e entendimento profundo sobre o mundo ao redor. Afeta a capacidade de tomar decisões sensatas e utilizar estratégias eficazes. Magos sábios possuem uma maior conexão com o maná e podem manipular a magia com mais controle e precisão. Enquanto 1 ponto equivale a um adulto experiente, 4 pontos correspondem a um mestre estrategista ou sábio iluminado, capaz de prever eventos e compreender profundamente o mundo ao seu redor."
         },
         "vont": {
-                "name": "Vontade",
-                "descrip": "A força interna e determinação do personagem, essencial para o uso da magia (mantra). Vontade alta aumenta a capacidade do mago de canalizar sua energia interna para realizar feitos mágicos poderosos, resistir a efeitos mentais ou controlar o próprio destino em momentos críticos."
+            "name": "Vontade",
+            "descrip": "A força interna e a determinação do personagem, essenciais para o uso da magia (mantra). Uma vontade elevada aumenta a capacidade do mago de canalizar sua energia interna para realizar feitos mágicos poderosos, resistir a efeitos mentais e controlar o próprio destino em momentos críticos. Enquanto 1 ponto equivale à resistência a qualquer tipo de vício comum ou manipulação mundana, 4 pontos representam um grau superior de resistência espiritual."
+        },
+        "luck": {
+            "name": "Sorte",
+            "descrip": "É a sorte padrão do personagem, utilizado quando nenhum outro atributo pode ajudar além da mais pura sorte. É definido com uma rolagem de 5d100 tendo o valor final dividido por 5."
+        }
+    },
+    "Atributos_Secudarios": {
+        "name": "Atributos Secundários",
+        "descrip": "São atributos derivados dos básicos, porém com igual importância.",
+        "storage": {
+            "name": "Armazenamento",
+            "descrip": "Dentro dos estudos arcanos, a mantra é uma energia misteriosa que foi descoberta por volta do ano de 2530, quando a raça humana estava unida em prol do estudo das maldições. Segundo os estudos mais aceitos, ela é vista como um combustível astral, construído a partir do ego e da vontade de cada indivíduo. A partir do grimório, pode ser canalizada para materializar a vontade no mundo real. A quantidade de mantra é definida pela fórmula: Vontade × 10."
+        },
+        "life": {
+            "name": "Vida",
+            "descrip": " a sua resistência contra danos. Caso chegue a 0, seu personagem ficará inconsciente. Se o valor se tornar negativo, todo dano recebido terá o efeito de um crítico. Caso o valor de vida atinja o equivalente ao seu total de vida em negativo, a morte será imediata e irreversível. Definida por Resistência x 10."
+        },
+        "liberation": {
+            "name": "Liberação",
+            "descrip": "Independente da quantidade de mantra que seu corpo é capaz de armazenar existe um limite do quanto pode ser liberado por 6 segundos(ou seja por turno), essa liberação é completamente instintiva, sendo assim definida pelo nível de sabedoria do personagem. Definida por Sabedoria em mantra/turno."
+        },
+        "preparation": {
+            "name": "Preparação",
+            "descrip": "É a mantra utilizado durante combates, pois possui uma duração muito curta, segundo os estudiosos ela deve ser vista como uma energia que é desprendida da massa principal de mantra através da liberação, o valor de mantra presente na preparação é de fato a que pode ser utilizada em magias, entretanto ela se manifesta como uma agitação que dura aproximadamente 1 minuto(ou seja, é zerada após o fim do combate caso não seja usada). O máximo é definido pelo valor de Inteligência + Sabedoria + Vontade em mantra."
+        },
+        "refinement": {
+            "name": "Refino",
+            "descrip": "É a capacidade que o mago tem de moldar a mantra liberada para a preparação, define a força das magias conjuradas a partir de mantra. Definida por Inteligência em graus."
+        },
+        "defense": {
+            "name": "Defesa",
+            "descrip": "É o quão difícil é atingi-lo em ataques individuais, para que um inimigo o acerte é necessário possuir um valor igual ou superior a esse atributo. Definido por 10 + Agilidade + Bônus de Armadura."
+        },
+        "load": {
+            "name": "Carga",
+            "descrip": "Define o peso total em equipamentos que cada personagem consegue carregar. Normal: Pode carregar sem restrição, igual ao valor de 200 x Força em quilogramas; Pesado: Pode carregar entretanto tendo sua movimentação reduzida pela metade, igual a 400x o valor de Força em quilogramas; Extremo: Pode carregar entretanto tendo apenas um quarto da movimentação, igual a  600x o valor de  Força em quilogramas;"
+        },
+        "stamps": {
+            "name": "Selos",
+            "descrip": "Define o número de ações que podem ser tomadas dentro de uma rodada. Definido por Agilidade x 10."
+        }
+    },
+    "habilidades": {
+        "id1": {
+        "title": "Aprendiz de Lâminas:",
+        "description": "Caso ataque um oponente que use espada como arma principal você terá vantagem em todos os seus acertos e caso seja atacada o atacante terá desvantagem. Além disso, todos os seus ataques com espada terão +1 de dano cortante. Poderá também usar a ação de contra ataque: caso um inimigo erre um ataque corpo-a-corpo contra você, terá a possibilidade de realizar uma reação sem gastar selos, e caso seja um erro crítico além da reação poderá também realizar um ataque corpo-a-corpo sem gastar selos."
         }
     }
 }

@@ -6,11 +6,11 @@ import tela_principal from './App.jsx'
 import tela_palatines from './App.jsx'
 import tela_maldições from './App.jsx'
 import tela_habilidades from './App.jsx'
-import tela_sistema from './App.jsx'
+import tela_itens from './App.jsx'
 
 let open_menu;
 
-export function Menu({tela_principal, tela_palatines, tela_maldições, tela_habilidades, tela_sistema}){
+export function Menu({tela_principal, tela_palatines, tela_maldições, tela_habilidades, tela_itens}){
     return (
         <>
         <header>
@@ -22,7 +22,7 @@ export function Menu({tela_principal, tela_palatines, tela_maldições, tela_hab
             <button onClick={tela_palatines}>Palatines</button>
             <button onClick={tela_maldições}>Maldições</button>
             <button onClick={tela_habilidades}>Habilidades</button>
-            <button onClick={tela_sistema}>Sistema</button>
+            <button onClick={tela_itens}>Itens</button>
             </nav>
         </header>
         </>
@@ -45,7 +45,7 @@ export function FloatingMenu(){
         </>
     )
 }
-export function MobileMenu({tela_principal, tela_palatines, tela_maldições, tela_habilidades, tela_sistema}) {
+export function MobileMenu({tela_principal, tela_palatines, tela_maldições, tela_habilidades, tela_itens}) {
     return (
         <nav id='openned'>
             <button  onClick={open_menu} class='mobile2'>
@@ -57,7 +57,7 @@ export function MobileMenu({tela_principal, tela_palatines, tela_maldições, te
             <button class="buttoni" onClick={tela_palatines}>Palatines</button>
             <button class="buttoni" onClick={tela_maldições}>Maldições</button>
             <button class="buttoni" onClick={tela_habilidades}>Habilidades</button>
-            <button class="buttoni" onClick={tela_sistema}>Sistema</button>
+            <button class="buttoni" onClick={tela_itens}>Itens</button>
             <h3 class="mt-100 mb-5">v0.1.2 - By Émerson Conde</h3>
         </nav>
     )

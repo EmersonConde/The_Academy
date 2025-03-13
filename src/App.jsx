@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import {Menu, FloatingMenu, MobileMenu} from './menu.jsx'
-import {MainPrincipal, MainSistema, MainPalatine, MainMaldições, MainHabilidades} from './screens.jsx'
+import {MainPrincipal, MainItens, MainPalatine, MainMaldições, MainHabilidades} from './screens.jsx'
 
 function App() {
   let [main, setmain] = useState(<MainPrincipal />)
@@ -21,8 +21,8 @@ function App() {
     setmain(<MainHabilidades />)
     document.getElementById('openned').style.display = "none"
   }
-  let tela_sistema = () => {
-    setmain(<MainSistema />)
+  let tela_itens = () => {
+    setmain(<MainItens />)
     document.getElementById('openned').style.display = "none"
   }
   return (
@@ -32,7 +32,7 @@ function App() {
             tela_palatines={tela_palatines} 
             tela_maldições={tela_maldições}
             tela_habilidades={tela_habilidades}
-            tela_sistema={tela_sistema}
+            tela_itens={tela_itens}
           />
           <FloatingMenu/>
           <MobileMenu 
@@ -40,7 +40,7 @@ function App() {
             tela_palatines={tela_palatines} 
             tela_maldições={tela_maldições}
             tela_habilidades={tela_habilidades}
-            tela_sistema={tela_sistema}
+            tela_itens={tela_itens}
           />
           {main}
           <footer></footer>
