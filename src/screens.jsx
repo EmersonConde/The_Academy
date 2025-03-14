@@ -13,6 +13,7 @@ const cp = content.criacao_personagem;
 const vont = content.vontade; 
 const atri = content.Atributos;
 const atrsec = content.Atributos_Secudarios;
+const hab = content.habilidades;
 
 const cruel_vonts = [
   Object.values(vont.ex6).join(""),
@@ -98,12 +99,40 @@ export function MainHabilidades(){
           <div class="w-[360px] h-[480px] py-8 px-1">
               <div class="relative flex flex-col justify-center items-center w-[300px] h-[400px] mx-auto p-2 bg-slate-50 border-slate-900 border-2 rounded-3xl">
 
-                  <h3 class="absolute -top-5 -left-5 w-32 p-2 bg-inherit border-slate-900 text-slate-900 border-2 rounded-3xl text-2xl font-merriweather text-center">{content.habilidades.id1.title}</h3>
+                  <h3 class="absolute -top-5 -left-5 w-64 p-2 bg-inherit border-slate-900 text-slate-900 border-2 rounded-3xl text-2xl font-merriweather text-center">{hab.id1.title}</h3>
+
+                  <h3 class="absolute flex justify-around flex-wrap top-10 w-64 p-2 text-slate-900 rounded-3xl text-2xl font-merriweather text-center">
+                    <small>Armas: 12(3)</small>
+                    <small>Desarmado: 0</small>
+                    <small>Corpo: 0</small>
+                    <small>Estudo: 0</small>
+                    <small>Mantra: 0</small>
+                  </h3>
 
                   <a href="https://eazyip.github.io/" target="__blank" class="block w-full mx-auto p-2 md:mx-auto hover:rotate-2 transition ease-in-out delay-75 duration-150"><img src="https://imgur.com/iUzX7FD.png" alt="Eazy IP Web app showcase mockup" class="object-fill"/></a>
 
-                  <p class="descrip1 absolute -bottom-8 left-6 w-[300px] p-4 bg-slate-800 text-slate-50 rounded-3xl hover:text-white">Descrição</p>
-                  <p class="descrip2 hidden absolute -bottom-20 left-6 w-[300px] p-4 bg-slate-800 text-slate-50 rounded-3xl hover:text-white">{content.habilidades.id1.description}</p>
+                  <p class="descrip1 absolute -bottom-8 left-6 w-[300px] p-4 bg-slate-800 text-slate-50 rounded-3xl hover:text-white">{hab.id1.book}<br />{hab.id1.cost}</p>
+                  <p class="descrip2 hidden font-light absolute -bottom-20 left-6 w-[300px] p-4 bg-slate-800 text-slate-50 rounded-3xl hover:text-white">{hab.id1.description}</p>
+              </div>
+          </div>
+          <div class="w-[360px] h-[480px] py-8 px-1">
+              <div class="relative flex flex-col justify-center items-center w-[300px] h-[400px] mx-auto p-2 bg-slate-50 border-slate-900 border-2 rounded-3xl">
+
+                  <h3 class="absolute -top-5 -left-5 w-64 p-2 bg-inherit border-slate-900 text-slate-900 border-2 rounded-3xl text-2xl font-merriweather text-center leading-4">{hab.id2.title} <small class="text-xs">{hab.id2.necess}</small> </h3>
+
+                  <h3 class="absolute flex justify-around flex-wrap top-10 w-64 p-2 text-slate-900 rounded-3xl text-2xl font-merriweather text-center">
+                    <small>Armas: 48(12)</small>
+                    <small>Desarmado: 0</small>
+                    <small>Corpo: 0</small>
+                    <small>Estudo: 0</small>
+                    <small>Mantra: 0</small>
+                  </h3>
+
+                  <a href="https://eazyip.github.io/" target="__blank" class="block w-full mx-auto p-2 md:mx-auto hover:rotate-2 transition ease-in-out delay-75 duration-150"><img src="https://imgur.com/iUzX7FD.png" alt="Eazy IP Web app showcase mockup" class="object-fill"/></a>
+
+                  <p class="descrip1 absolute -bottom-8 left-6 w-[300px] p-4 bg-slate-800 text-slate-50 rounded-3xl hover:text-white">{hab.id2.book}<br />{hab.id2.cost}</p>
+
+                  <p class="descrip2 hidden font-light absolute -bottom-20 left-6 w-[300px] p-4 bg-slate-800 text-slate-50 rounded-3xl hover:text-white">{hab.id2.description}</p>
               </div>
           </div>
       </div>

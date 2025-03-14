@@ -94,6 +94,7 @@ header button {
 }
 .descrip2:hover {
   display: block;
+  text-align: justify;
 }
 
 @media (max-width: 1079px) {

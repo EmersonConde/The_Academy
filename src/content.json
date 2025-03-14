@@ -133,8 +133,19 @@
     },
     "habilidades": {
         "id1": {
-        "title": "Aprendiz de Lâminas:",
+        "title": "Aprendiz de Lâminas",
+        "necess": "aprendiz de lâminas",
+        "cost": "5 pt Subjugação;",
+        "book": "'The Art of the Sword'",
         "description": "Caso ataque um oponente que use espada como arma principal você terá vantagem em todos os seus acertos e caso seja atacada o atacante terá desvantagem. Além disso, todos os seus ataques com espada terão +1 de dano cortante. Poderá também usar a ação de contra ataque: caso um inimigo erre um ataque corpo-a-corpo contra você, terá a possibilidade de realizar uma reação sem gastar selos, e caso seja um erro crítico além da reação poderá também realizar um ataque corpo-a-corpo sem gastar selos."
+        },
+        "id2": {
+        "title": "Veterano Espadachim",
+        "necess": "aprendiz de lâminas",
+        "cost": "10 pt Subjugação;",
+        "book": "'The Book of Five Rings'",
+        "fragments": "Mínimo de 48 de manejo de armas(ocupa 12);",
+        "description": "Caso ataque um oponente que use espada como arma principal você terá vantagem em todos os seus acertos e caso seja atacada o atacante terá desvantagem. Além disso, todos os seus ataques com espada terão +2 de dano cortante. Poderá também usar a ação de contra ataque: caso um inimigo erre um ataque corpo-a-corpo contra você, terá a possibilidade de realizar uma reação sem gastar selos, e caso seja um erro crítico além da reação poderá também realizar um ataque corpo-a-corpo sem gastar selos."
         }
     }
 }
